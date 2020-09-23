@@ -1,0 +1,16 @@
+This project allows you to add #INCLUDE lines to your VB project. 
+To use it, insert lines starting with '#INCLUDE in your VB project, using the following syntax:
+
+	'#INCLUDE MyIncludedCode                                                  or
+	'#INCLUDE C:\Direct pathname\to my\included code.txt
+
+If you use the first syntax, it will look for the included code in the same folder as the project, having a suffix of .TXT. 
+If you use the second syntax, it will look in the indicated pathname for the included code.
+
+It works in the following manner:
+
+	1. First, it copies all files referenced by the project, to a temporary folder.
+	2. Then, it replaces all #INCLUDE lines with the text in the #INCLUDE files.
+	3. Finally, it compiles the temporary project.
+
+If you wish to view the temporary project with the #INCLUDED lines, click the "Open Temporary Project" button.

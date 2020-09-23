@@ -1,0 +1,2 @@
+    MsgBox "QUIT IT!", vbCritical
+    MsgBox "Just kidding. These lines were added by the preprocessor."
